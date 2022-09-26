@@ -1,3 +1,5 @@
+<app-search></app-search>
+<app-tag></app-tag>
 <ul>
 
 
@@ -10,7 +12,7 @@
           </div>
           <span class="favourite {{data.favourite?'':'not'}}" >🤍</span>
         <br>
-          <ngb-rating [max]="5" [(rate)]="data.star" [readonly]="true"></ngb-rating>
+          <ngb-rating class="star" [max]="5" [(rate)]="data.star" [readonly]="true"></ngb-rating>
           <div class="product-footer-list">
             <div class="origin">
               <span *ngFor="let data of data.origins">
@@ -21,9 +23,10 @@
               <span>🕑</span>
               {{data.cocktime}}
             </div>
-            <div class="price">
-              {{data.price | currency }}
-            </div>
+            
+          </div>
+          <div class="price">
+            {{data.price | currency }}
           </div>
 
         </div>

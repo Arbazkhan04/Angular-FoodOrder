@@ -1,10 +1,31 @@
 import { Injectable } from '@angular/core';
 import { foods } from 'src/app/shared/modal/food';
+import { tag } from 'src/app/shared/modal/tag';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
+
+  getAllTags(_tag:string):foods[]
+  {
+    return _tag=='All'?this.getAllImage():this.getAllImage().filter(food=>food.name?.includes(_tag))
+
+  }
+ DisplayAllTag():tag[]{
+  return [
+    
+    {  name:'All', count:8 },
+    {  name:'FastFood', count:4 },
+    {  name:'Pizza', count:3 },
+    {  name:'Burger', count:4 },
+    {  name:'Soup', count:1 },
+    {  name:'Humburger', count:2 },
+    {  name:'Fry', count:1 },
+  
+    
+  ]
+ }
 
   constructor() { }
 
@@ -17,14 +38,14 @@ export class FoodService {
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],
-        imageUrl:'/assets/food-1.jpg',
+        imageUrl:'/assets/food-6.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
       },
       {
         id: 2,
         price:10,
-        name:'Pizza Burger',
+        name:'Potato Corn Burger',
         favourite:false,
         star:3,
         tags:['fastfood','pizza','lunch'],
@@ -35,7 +56,7 @@ export class FoodService {
       {
         id: 3,
         price:10,
-        name:'Pizza Burger',
+        name:'Pizza',
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],
@@ -46,7 +67,7 @@ export class FoodService {
       {
         id: 4,
         price:10,
-        name:'Pizza Burger',
+        name:'Stuffed Bean Burger',
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],
@@ -68,18 +89,18 @@ export class FoodService {
       {
         id: 6,
         price:10,
-        name:'Pizza Burger',
+        name:'Detroit Pizza',
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],
-        imageUrl:'/assets/food-6.jpg',
+        imageUrl:'/assets/food-1.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
       },
       {
         id: 7,
         price:10,
-        name:'Pizza Burger',
+        name:'Sicilian Pizza',
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],
@@ -90,7 +111,7 @@ export class FoodService {
       {
         id: 8,
         price:10,
-        name:'Pizza Burger',
+        name:'Soup',
         favourite:false,
         star:4.5,
         tags:['fastfood','pizza','lunch'],

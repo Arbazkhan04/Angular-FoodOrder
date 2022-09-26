@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { TagComponent } from './tag/tag.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
