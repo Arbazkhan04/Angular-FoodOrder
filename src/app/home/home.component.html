@@ -4,7 +4,7 @@
 
 
   <li *ngFor="let data of getDataFromFoodService">
-    <a>
+    <a routerLink="/food/{{data.id}}">
         <img src="{{data.imageUrl}}" alt="image data">
         <div class="content">
           <div class="name">

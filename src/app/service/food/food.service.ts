@@ -29,6 +29,10 @@ export class FoodService {
 
   constructor() { }
 
+  getFoodById(id:number):foods{
+     return this.getAllImage().find(food=>food.id==id)!;
+  }   
+
   getAllImage():foods[]{
     return[
       {
