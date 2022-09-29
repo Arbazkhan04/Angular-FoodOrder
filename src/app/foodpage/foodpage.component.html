@@ -1,37 +1,38 @@
 <div class="container">
     <img [src]="food.imageUrl" [alt]="food.name">
-</div>
-<div class="detail">
-    <div class="header">
-        <span class="name">
-            {{food.name}}
-        </span>
-        <span class="favourite {{food.favourite}}?'';'not">
-            🤍
-        </span>
-       
-    </div>
-    <div class="star">
-        <ngb-rating class="star" [max]="5" [(rate)]="food.star" [readonly]="true"></ngb-rating>
-    </div>
-    <div class="origin">
-        <span *ngFor="let origin of food.origins">
-            {{origin}}
-        </span>
-    </div>
-    <div class="tag">
-       <app-tag  [foodPageTage]="food.tags"></app-tag>
 
+    <div class="detail">
+        <div class="header">
+            <span class="name">
+                {{food.name}}
+            </span>
+            <span class="favourite {{food.favourite}}?'';'not">
+                🤍
+            </span>
+
+        </div>
+        <div class="star">
+            <ngb-rating class="star" [max]="5" [(rate)]="food.star" [readonly]="true"></ngb-rating>
+        </div>
+        <div class="origin">
+            <span *ngFor="let origin of food.origins">
+                {{origin}}
+            </span>
+        </div>
+        <div class="tag">
+            <app-tag [foodPageTage]="food.tags"></app-tag>
+
+        </div>
+        <div class="cocktime">
+            <span>
+                time to cock about <strong>{{food.cocktime}} </strong>Minute
+            </span>
+        </div>
+        <div class="price">
+            <span>
+                {{food.price|currency}}
+            </span>
+        </div>
+        <button>Add to cart</button>
     </div>
-    <div class="cocktime">
-        <span>
-            time to cock about <strong>{{food.cocktime}} </strong>Minute
-        </span>
-    </div>
-    <div class="price">
-        <span>
-            {{food.price|currency}}
-        </span>
-    </div>
- <button>Add to cart</button>
 </div>

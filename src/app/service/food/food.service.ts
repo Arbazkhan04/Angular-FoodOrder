@@ -41,7 +41,7 @@ export class FoodService {
         name:'Pizza Burger',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-6.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -52,7 +52,7 @@ export class FoodService {
         name:'Potato Corn Burger',
         favourite:false,
         star:3,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/fodd-2.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -63,7 +63,7 @@ export class FoodService {
         name:'Pizza',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-3.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -74,7 +74,7 @@ export class FoodService {
         name:'Stuffed Bean Burger',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-4.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -85,7 +85,7 @@ export class FoodService {
         name:'Pizza Burger',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-5.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -96,7 +96,7 @@ export class FoodService {
         name:'Detroit Pizza',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-1.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -107,7 +107,7 @@ export class FoodService {
         name:'Sicilian Pizza',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-7.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
@@ -118,7 +118,7 @@ export class FoodService {
         name:'Soup',
         favourite:false,
         star:4.5,
-        tags:['fastfood','pizza','lunch'],
+        tags:['fastfood','Pizza','lunch'],
         imageUrl:'/assets/food-8.jpg',
         cocktime:'20 to 30 Minutes',
         origins:['Pakistani','Indian','Italian']
