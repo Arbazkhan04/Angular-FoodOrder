@@ -20,7 +20,7 @@
             </span>
         </div>
         <div class="tag">
-            <app-tag [foodPageTage]="food.tags"></app-tag>
+            <app-tag [foodPageTage]="food.tags" justifyContent="start"></app-tag>
 
         </div>
         <div class="cocktime">
@@ -33,6 +33,6 @@
                 {{food.price|currency}}
             </span>
         </div>
-        <button>Add to cart</button>
+        <button class="btn btn-outline-primary">Add to cart</button>
     </div>
 </div>

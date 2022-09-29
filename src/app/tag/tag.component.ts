@@ -10,6 +10,8 @@ import { tag } from '../shared/modal/tag';
 export class TagComponent implements OnInit {
   @Input()
   foodPageTage?:string[];
+  @Input()
+  justifyContent:string='center';
   tags:tag[]=[];
   constructor( private fs:FoodService) { }
 
