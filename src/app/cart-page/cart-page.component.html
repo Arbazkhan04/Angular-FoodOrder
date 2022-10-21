@@ -1,6 +1,8 @@
 <ul>
     <li *ngFor="let cartItem of cart.items">
         <div>
+    //commmen is making problem
+            <p>{{cartItem.food.name}}</p>
             <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
         </div>
     </li>
